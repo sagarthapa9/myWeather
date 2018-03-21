@@ -17,9 +17,9 @@
    <ion-row>
      <ion-col width-100>
        <ion-list>
-         <ion-item href="#">
+         <!-- <ion-item href="#">
            <strong>Temp :</strong> {{weather.temperature_string}}
-         </ion-item>
+         </ion-item> -->
                   <ion-item href="#">
            <strong>Relative Humidity :</strong> {{weather.relative_humidity}}
          </ion-item>
@@ -35,14 +35,13 @@
        </ion-list>
      </ion-col>
    </ion-row>
-   <ion-row>
-      <ion-fab bottom center style="margin-bottom: 20px;">
-          <label style="font-size:15px;margin-left:-20px;">Flash Light</label>
-         <button ion-fab mini color="{{isOn ? 'danger': 'light'}}" (click)="toggleFlash()">
+   <ion-row style="margin-top: -15px;">
+      <ion-fab center>
+         <button ion-fab color="{{isOn ? 'danger': 'light'}}" (click)="toggleFlash()">
            <ion-icon name="{{isOn ? 'ios-flash-outline' : 'ios-flash'}}"></ion-icon>
          </button>
-       
-        </ion-fab>
+         <label style="font-size:15px;margin-left:-30px;">Use Flash Light</label>
+      </ion-fab>
    </ion-row>
  </ion-grid>
 </ion-content>
