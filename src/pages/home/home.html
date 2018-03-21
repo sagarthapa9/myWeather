@@ -35,5 +35,14 @@
        </ion-list>
      </ion-col>
    </ion-row>
+   <ion-row>
+      <ion-fab bottom center style="margin-bottom: 20px;">
+          <label style="font-size:15px;margin-left:-20px;">Flash Light</label>
+         <button ion-fab mini color="{{isOn ? 'danger': 'light'}}" (click)="toggleFlash()">
+           <ion-icon name="{{isOn ? 'ios-flash-outline' : 'ios-flash'}}"></ion-icon>
+         </button>
+       
+        </ion-fab>
+   </ion-row>
  </ion-grid>
 </ion-content>

@@ -13,7 +13,7 @@
 
 .temp{
 
-	font-size: 90px;
+	font-size: 30px;
 	text-align: center;
 	font-weight: normal;
 
@@ -23,14 +23,21 @@
 	text-align: center;
 }
 .icon img{
-	width: 100px;
+	width: 40px;
 }
 
 .location{
-	font-size:40px;
+	font-size:20px;
 
 }
 
 .desc{
-	font-size: 30px;
+	font-size: 20px;
+}
+
+.fab[mini] {
+    margin: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
 }
