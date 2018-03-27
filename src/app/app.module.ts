@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 import { HttpModule} from '@angular/http';
 import { IonicStorageModule} from '@ionic/storage';
 import { Flashlight } from '@ionic-native/flashlight';
+import { Geolocation} from '@ionic-native/geolocation';
 
 import { AboutPage } from '../pages/about/about';
 // import { ContactPage } from '../pages/contact/contact';
@@ -44,7 +45,7 @@ import { WeatherProvider } from '../providers/weather/weather';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WeatherProvider, Flashlight
+    WeatherProvider, Flashlight, Geolocation
   ]
 })
 export class AppModule {}
